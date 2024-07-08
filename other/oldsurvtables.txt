@@ -1,0 +1,49 @@
+#figure(
+table(columns: 4,
+  [Variable],                         [Coeff],   [S.E.],     [p],
+  [Intercept],                        [4.30],    [0.120], [< 2e-16],
+  [Side (Home=1)],                    [-0.15],   [0.119], [0.2159],
+  [Team's grouping (Higher=1)],       [-0.25],   [0.079], [0.0020],
+  [Opponent's \ grouping (Higher=1)], [0.16],    [0.081], [0.0442],
+  [Distance (km)],                    [0.00077], [5.33e-4], [0.1476],
+  [Log(scale)],                       [-0.122],  [0.039], [0.0016]
+),
+caption: [Table of coefficients for factor model]
+)
+
+#figure(
+table(columns: 4,
+  [Variable],                         [Coeff],      [S.E.],     [p],
+  [Intercept],                        [4.36],       [0.266],   [\<2e-16],
+  [Side (Home=1)],                    [-0.155],     [0.136],   [0.253],
+  [Last-season points],               [-0.00891],   [0.00268], [8.9e-4],
+  [Opponent's LSP],                   [0.00704],    [0.00289], [0.0148],
+  [Distance (km)],                    [0.000765],   [5.94e-4], [0.198],
+  [Log(scale)],                       [-0.135],     [0.0457],  [0.00308]
+),
+caption: [Table of coefficients for continuous model]
+)
+
+#figure(
+table(columns: 4,
+[Variable],                           [Value],   [S.E],     [p],
+[Intercept],                          [4.18],    [0.0689],  [< 2e-16],
+[Team's \ grouping \ (Higher=1)],     [-0.242],  [0.0794],  [0.00230],
+[Opponent's \ grouping \ (Higher=1)], [0.169],   [0.0812],  [0.0374],
+[Distance (km)],                      [0.00127], [3.58e-4], [3.9e-4],
+[Log(scale)],                         [-0.121],  [0.0387],  [0.00180]
+),
+caption: [Table of coefficients for new factor model]
+)
+
+#figure(
+table(columns: 4,
+  [Variable],                         [Coeff],      [S.E.],    [p],
+  [Intercept],                        [4.22],       [0.239],   [< 2e-16],
+  [Last-season points],               [-0.00881],   [0.00269], [0.0010],
+  [Opponent's LSP],                   [0.00718],    [0.00290], [0.0132],
+  [Distance (km)],                    [0.00127],    [4.07e-4], [0.0018],
+  [Log(scale)],                       [-0.134],     [0.0457],  [0.0035]
+),
+caption: [Table of coefficients for new continuous model]
+)

@@ -1,0 +1,73 @@
+model_full
+Call:
+flexsurvreg(formula = surv ~ home_or_away + team_grouping + opponent_grouping + 
+    actual_distance, data = match_data, dist = "WeibullPH")
+
+Estimates: 
+                        exp(est)  L95%      U95%     
+home_or_awayHome         1.181603  0.908657  1.536538
+team_groupingHigher      1.319207  1.106774  1.572414
+opponent_groupingHigher  0.831460  0.694668  0.995190
+actual_distance          0.999129  0.997977  1.000282
+
+N = 706,  Events: 512,  Censored: 194
+Total time at risk: 36558
+Log-likelihood = -2679.581, df = 6
+AIC = 5371.162
+
+> model_ctns <- flexsurvreg(formula = surv ~ home_or_away + points + opponent_points + actual_distance, data = match_data, dist = "WeibullPH")
+> model_ctns
+Call:
+flexsurvreg(formula = surv ~ home_or_away + points + opponent_points + 
+    actual_distance, data = match_data, dist = "WeibullPH")
+
+Estimates: 
+                exp(est)  L95%      U95%     
+home_or_awayHome 1.195304  0.881475  1.620864
+points           1.010255  1.004207  1.016339
+opponent_points  0.991973  0.985576  0.998412
+actual_distance  0.999125  0.997987  1.000265
+
+N = 500,  Events: 367,  Censored: 133
+Total time at risk: 25823
+Log-likelihood = -1911.356, df = 6
+AIC = 3834.713
+
+
+> model_final <- flexsurvreg(formula = surv ~ team_grouping + opponent_grouping + actual_distance, data = match_data, dist = "WeibullPH")
+> model_final
+Call:
+flexsurvreg(formula = surv ~ team_grouping + opponent_grouping + 
+    actual_distance, data = match_data, dist = "WeibullPH")
+
+Estimates: 
+                         est        exp(est)   L95%       U95%     
+shape                     1.128343         NA         NA         NA
+scale                     0.008979         NA         NA         NA
+team_groupingHigher       0.273052   1.313968   1.102479   1.566026
+opponent_groupingHigher  -0.190646   0.826425   0.690625   0.988927
+actual_distance          -0.001432   0.998569   0.997793   0.999346
+
+N = 706,  Events: 512,  Censored: 194
+Total time at risk: 36558
+Log-likelihood = -2680.361, df = 5
+AIC = 5370.722
+
+> model_ctns_final <- flexsurvreg(formula = surv ~ points + opponent_points + actual_distance, data = match_data, dist = "WeibullPH")
+> model_ctns_final
+Call:
+flexsurvreg(formula = surv ~ points + opponent_points + actual_distance, 
+    data = match_data, dist = "WeibullPH")
+
+Estimates: 
+                 est        exp(est)   L95%       U95%     
+shape             1.142912         NA         NA         NA
+scale             0.007999         NA         NA         NA
+points            0.010065   1.010116   1.004069   1.016198
+opponent_points  -0.008206   0.991827   0.985426   0.998270
+actual_distance  -0.001449   0.998552   0.997659   0.999447
+
+N = 500,  Events: 367,  Censored: 133
+Total time at risk: 25823
+Log-likelihood = -1912.022, df = 5
+AIC = 3834.044

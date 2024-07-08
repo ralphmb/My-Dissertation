@@ -1,0 +1,21 @@
+#table(
+  columns: 4,
+  text(size:8pt,[Variable]), text(size:8pt,[$exp("est")$]), text(size:8pt,[2.5%]), text(size:8pt,[97.5%]),
+  text(size:8pt,[High group (vs low)]), text(size:8pt,[1.314]), text(size:8pt,[1.102]), text(size:8pt,[1.566]), 
+  text(size:8pt,[High grouped opponent (vs low)]), text(size:8pt,[0.826]), text(size:8pt,[0.691]), text(size:8pt,[0.988]),
+  text(size:8pt,[Distance]), text(size:8pt,[0.999]), text(size:8pt,[0.998]), text(size:8pt,[0.999]),
+)
+#table(
+  columns: 4,
+  text(size:8pt,[Variable]), text(size:8pt,[$exp("est")$]), text(size:8pt,[2.5%]), text(size:8pt,[97.5%]),
+  text(size:8pt,[Points]), text(size:8pt,[1.010]), text(size:8pt,[1.004]), text(size:8pt,[1.016]), 
+  text(size:8pt,[Opponent points]), text(size:8pt,[0.992]), text(size:8pt,[0.985]), text(size:8pt,[0.998]),
+  text(size:8pt,[Distance]), text(size:8pt,[0.999]), text(size:8pt,[0.998]), text(size:8pt,[0.999]),
+)
+table(columns: 2,
+  text(size:8pt,[Variable]),           text(size:8pt,[exp(coeff)]),
+  text(size:8pt,[Last-season points]), text(size:8pt,[1.010144]),
+  text(size:8pt,[Opponent's LSP]),     text(size:8pt,[0.9917837]),
+  text(size:8pt,[Distance (km)]),      text(size:8pt,[0.9985559])
+)
+

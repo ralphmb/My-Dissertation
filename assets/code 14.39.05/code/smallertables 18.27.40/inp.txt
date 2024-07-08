@@ -1,0 +1,21 @@
+#table(
+  columns: 4,
+  [Variable], [$exp("est")$], [2.5%], [97.5%],
+  [High group (vs low)], [1.314], [1.102], [1.566], 
+  [High grouped opponent (vs low)], [0.826], [0.691], [0.988],
+  [Distance], [0.999], [0.998], [0.999],
+)
+#table(
+  columns: 4,
+  [Variable], [$exp("est")$], [2.5%], [97.5%],
+  [Points], [1.010], [1.004], [1.016], 
+  [Opponent points], [0.992], [0.985], [0.998],
+  [Distance], [0.999], [0.998], [0.999],
+)
+table(columns: 2,
+  [Variable],           [exp(coeff)],
+  [Last-season points], [1.010144],
+  [Opponent's LSP],     [0.9917837],
+  [Distance (km)],      [0.9985559]
+)
+
